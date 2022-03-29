@@ -1,13 +1,732 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=hu, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    .resp-tab {
+    border-radius: 5px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+}
+.resp-tab th, .resp-tab td {
+    padding: 10px 20px;
+    font-size: 13px;
+    border: none;
+    font-family: Verdana, sans-serif;   
+    border: 1px solid #337AB7;
+    vertical-align: top;
+}
+.resp-tab th {
+    color: #FFF;
+    background: #337AB7;
+    font-weight: bold;
+    border: 1px solid #1a4a73;   
+    text-transform: uppercase;   
+    text-align: center;   
+}
+.resp-tab tr:nth-child(even) {
+    background: #edf7ff;
+}
+.resp-tab td span {
+    background: #337AB7;
+    color: #FFF;
+    display: none;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;   
+    text-transform: uppercase;       
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;   
+}
+@media(max-width: 768px) {
+    .resp-tab thead {
+        display: none;
+    }
+    .resp-tab tr {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .resp-tab td {
+        margin: 0 -1px -1px 0;
+        padding-top: 35px;
+        position: relative;
+        width: 50%;
+    }
+    .resp-tab td span {
+        display: block;
+    }
+}
+@media(max-width: 480px) {
+    .resp-tab td {
+        width: 100%;
+    }
+}
+  </style>
 </head>
 <body>
-    <h1>Привет</h1>
-    <h2></h2>
+<table border="1" class="resp-tab" style="margin-left:auto;margin-right:auto;border:black solid 1px;background-color:#f2f2f2">
+	<tbody>
+		<tr>
+			<td>
+			<p>Параметры</p>
+			</td>
+			<td style="width:75px">
+			<p align="center">Ед. изм.</p>
+			</td>
+			<td colspan="7" style="width:412px">
+			<p align="center">Технические данные</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="">
+			<p align="center">Номинальная мощность котла</p>
+			</td>
+			<td style="width:75px">
+			<p align="center">кВт</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">12</p>
+			</td>
+			<td style="">
+			<p align="center">18</p>
+			</td>
+			<td style="">
+			<p align="center">25</p>
+			</td>
+			<td style="">
+			<p align="center">32</p>
+			</td>
+			<td style="">
+			<p align="center">38</p>
+			</td>
+			<td style="">
+			<p align="center">45</p>
+			</td>
+			<td style="">
+			<p align="center">52</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="">
+			<p align="center">Ориентировочная отапливаемая мощность (при высоте потолков h=3 м)</p>
+			</td>
+			<td style="width:75px">
+			<p align="center">м<sup>2</sup></p>
+			</td>
+			<td style="width:70px">
+			<p align="center">70-120</p>
+			</td>
+			<td style="">
+			<p align="center">100-180</p>
+			</td>
+			<td style="">
+			<p align="center">150-300</p>
+			</td>
+			<td style="">
+			<p align="center">200-370</p>
+			</td>
+			<td style="">
+			<p align="center">300-426</p>
+			</td>
+			<td style="">
+			<p align="center">400-500</p>
+			</td>
+			<td style="">
+			<p align="center">460-570</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="">
+			<p align="center">Основное топливо</p>
+			</td>
+			<td style="width:75px">
+			<p align="center">&nbsp;</p>
+			</td>
+			<td colspan="7" style="width:412px">
+			<p align="center">Дрова, брикеты, отходы древесины*</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="">
+			<p align="center">Площадь теплообменника котла</p>
+			</td>
+			<td style="width:75px">
+			<p align="center">м<sup>2</sup></p>
+			</td>
+			<td style="width:70px">
+			<p align="center">2,2</p>
+			</td>
+			<td style="">
+			<p align="center">2,7</p>
+			</td>
+			<td style="">
+			<p align="center">3,2</p>
+			</td>
+			<td style="">
+			<p align="center">3,4</p>
+			</td>
+			<td style="">
+			<p align="center">3,7</p>
+			</td>
+			<td style="">
+			<p align="center">4,2</p>
+			</td>
+			<td style="">
+			<p align="center">4,6</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="">
+			<p align="center">Коэффициент полезного действия, не менее</p>
+			</td>
+			<td style="width:75px">
+			<p align="center"><strong>%</strong></p>
+			</td>
+			<td style="width:70px">
+			<p align="center"><strong>88</strong></p>
+			</td>
+			<td style="">
+			<p align="center"><strong>89</strong></p>
+			</td>
+			<td style="">
+			<p align="center"><strong>89</strong></p>
+			</td>
+			<td style="">
+			<p align="center"><strong>89</strong></p>
+			</td>
+			<td style="">
+			<p align="center"><strong>89</strong></p>
+			</td>
+			<td style="">
+			<p align="center"><strong>89</strong></p>
+			</td>
+			<td style="">
+			<p align="center"><strong>89</strong></p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td rowspan="3" style="">
+			<p align="center">Размеры топки</p>
+			</td>
+			<td style="width:75px">
+			<p align="center">диаметр, &Oslash; мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">435</p>
+			</td>
+			<td style="">
+			<p align="center">435</p>
+			</td>
+			<td style="">
+			<p align="center">525</p>
+			</td>
+			<td style="">
+			<p align="center">557</p>
+			</td>
+			<td style="">
+			<p align="center">645</p>
+			</td>
+			<td style="">
+			<p align="center">710</p>
+			</td>
+			<td style="">
+			<p align="center">770</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">высота, мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">750</p>
+			</td>
+			<td style="">
+			<p align="center">1100</p>
+			</td>
+			<td style="">
+			<p align="center">1100</p>
+			</td>
+			<td style="">
+			<p align="center">1100</p>
+			</td>
+			<td style="">
+			<p align="center">1100</p>
+			</td>
+			<td style="">
+			<p align="center">1100</p>
+			</td>
+			<td style="">
+			<p align="center">1100</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">объем, м<sup>3</sup></p>
+			</td>
+			<td style="width:70px">
+			<p align="center">0.120</p>
+			</td>
+			<td style="">
+			<p align="center">0.170</p>
+			</td>
+			<td style="">
+			<p align="center">0.235</p>
+			</td>
+			<td style="">
+			<p align="center">0.270</p>
+			</td>
+			<td style="">
+			<p align="center">0.310</p>
+			</td>
+			<td style="">
+			<p align="center">0.435</p>
+			</td>
+			<td style="">
+			<p align="center">0.510</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="">
+			<p align="center">Водяная емкость котла</p>
+			</td>
+			<td style="width:75px">
+			<p align="center">Л</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">35</p>
+			</td>
+			<td style="">
+			<p align="center">42</p>
+			</td>
+			<td style="">
+			<p align="center">50</p>
+			</td>
+			<td style="">
+			<p align="center">56</p>
+			</td>
+			<td style="">
+			<p align="center">60</p>
+			</td>
+			<td style="">
+			<p align="center">68</p>
+			</td>
+			<td style="">
+			<p align="center">74</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="">
+			<p align="center">Масса котла без воды в упаковке</p>
+			</td>
+			<td style="width:75px">
+			<p align="center">Кг</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">230</p>
+			</td>
+			<td style="">
+			<p align="center">310</p>
+			</td>
+			<td style="">
+			<p align="center">340</p>
+			</td>
+			<td style="">
+			<p align="center">370</p>
+			</td>
+			<td style="">
+			<p align="center">410</p>
+			</td>
+			<td style="">
+			<p align="center">440</p>
+			</td>
+			<td style="">
+			<p align="center">480</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td rowspan="9" style="">
+			<p align="center">Монтажные размеры котла</p>
+			</td>
+			<td style="width:75px">
+			<p align="center">Н1, мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">1750</p>
+			</td>
+			<td style="">
+			<p align="center">2100</p>
+			</td>
+			<td style="">
+			<p align="center">2100</p>
+			</td>
+			<td style="">
+			<p align="center">2100</p>
+			</td>
+			<td style="">
+			<p align="center">2100</p>
+			</td>
+			<td style="">
+			<p align="center">2100</p>
+			</td>
+			<td style="">
+			<p align="center">2100</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">Н2, мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">1400</p>
+			</td>
+			<td style="">
+			<p align="center">1209</p>
+			</td>
+			<td style="">
+			<p align="center">1209</p>
+			</td>
+			<td style="">
+			<p align="center">1209</p>
+			</td>
+			<td style="">
+			<p align="center">1209</p>
+			</td>
+			<td style="">
+			<p align="center">1209</p>
+			</td>
+			<td style="">
+			<p align="center">1209</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">Н3, мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">100</p>
+			</td>
+			<td style="">
+			<p align="center">105</p>
+			</td>
+			<td style="">
+			<p align="center">105</p>
+			</td>
+			<td style="">
+			<p align="center">105</p>
+			</td>
+			<td style="">
+			<p align="center">105</p>
+			</td>
+			<td style="">
+			<p align="center">105</p>
+			</td>
+			<td style="">
+			<p align="center">105</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">Н4, мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">1491,5</p>
+			</td>
+			<td style="">
+			<p align="center">1759,5</p>
+			</td>
+			<td style="">
+			<p align="center">1759,5</p>
+			</td>
+			<td style="">
+			<p align="center">1759,5</p>
+			</td>
+			<td style="">
+			<p align="center">1759,5</p>
+			</td>
+			<td style="">
+			<p align="center">1759,5</p>
+			</td>
+			<td style="">
+			<p align="center">1759,5</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">Н5, мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">1691,5</p>
+			</td>
+			<td style="">
+			<p align="center">1949</p>
+			</td>
+			<td style="">
+			<p align="center">1949</p>
+			</td>
+			<td style="">
+			<p align="center">1949</p>
+			</td>
+			<td style="">
+			<p align="center">1949</p>
+			</td>
+			<td style="">
+			<p align="center">1949</p>
+			</td>
+			<td style="">
+			<p align="center">1949</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">Н6, мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">139</p>
+			</td>
+			<td style="">
+			<p align="center">139</p>
+			</td>
+			<td style="">
+			<p align="center">139</p>
+			</td>
+			<td style="">
+			<p align="center">139</p>
+			</td>
+			<td style="">
+			<p align="center">139</p>
+			</td>
+			<td style="">
+			<p align="center">139</p>
+			</td>
+			<td style="">
+			<p align="center">139</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">Н7, мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">1552,5</p>
+			</td>
+			<td style="">
+			<p align="center">1810</p>
+			</td>
+			<td style="">
+			<p align="center">1810</p>
+			</td>
+			<td style="">
+			<p align="center">1810</p>
+			</td>
+			<td style="">
+			<p align="center">1810</p>
+			</td>
+			<td style="">
+			<p align="center">1810</p>
+			</td>
+			<td style="">
+			<p align="center">1810</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">Н8, G&rdquo;</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">1 1/2</p>
+			</td>
+			<td style="">
+			<p align="center">1 1/2</p>
+			</td>
+			<td style="">
+			<p align="center">1 1/2</p>
+			</td>
+			<td style="">
+			<p align="center">1 1/2</p>
+			</td>
+			<td style="">
+			<p align="center">2</p>
+			</td>
+			<td style="">
+			<p align="center">2</p>
+			</td>
+			<td style="">
+			<p align="center">2</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">D, мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">560</p>
+			</td>
+			<td style="">
+			<p align="center">560</p>
+			</td>
+			<td style="">
+			<p align="center">645</p>
+			</td>
+			<td style="">
+			<p align="center">681</p>
+			</td>
+			<td style="">
+			<p align="center">770</p>
+			</td>
+			<td style="">
+			<p align="center">838</p>
+			</td>
+			<td style="">
+			<p align="center">881</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td rowspan="2" style="">
+			<p align="center">Размеры загрузочной дверцы</p>
+			</td>
+			<td style="width:75px">
+			<p align="center">высота, мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">320</p>
+			</td>
+			<td style="">
+			<p align="center">320</p>
+			</td>
+			<td style="">
+			<p align="center">320</p>
+			</td>
+			<td style="">
+			<p align="center">320</p>
+			</td>
+			<td style="">
+			<p align="center">420</p>
+			</td>
+			<td style="">
+			<p align="center">420</p>
+			</td>
+			<td style="">
+			<p align="center">420</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">ширина, мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">240</p>
+			</td>
+			<td style="">
+			<p align="center">240</p>
+			</td>
+			<td style="">
+			<p align="center">240</p>
+			</td>
+			<td style="">
+			<p align="center">240</p>
+			</td>
+			<td style="">
+			<p align="center">340</p>
+			</td>
+			<td style="">
+			<p align="center">340</p>
+			</td>
+			<td style="">
+			<p align="center">340</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td rowspan="3" style="">
+			<p>Параметры дымохода</p>
+			</td>
+			<td style="width:75px">
+			<p align="center">площадь сечения, см<sup>2</sup></p>
+			</td>
+			<td style="width:70px">
+			<p align="center">200</p>
+			</td>
+			<td style="">
+			<p align="center">200</p>
+			</td>
+			<td style="">
+			<p align="center">250</p>
+			</td>
+			<td style="">
+			<p align="center">250</p>
+			</td>
+			<td style="">
+			<p align="center">250</p>
+			</td>
+			<td style="">
+			<p align="center">250</p>
+			</td>
+			<td style="">
+			<p align="center">250</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">внутренний диаметр, &Oslash; мм</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">160</p>
+			</td>
+			<td style="">
+			<p align="center">160</p>
+			</td>
+			<td style="">
+			<p align="center">180</p>
+			</td>
+			<td style="">
+			<p align="center">180</p>
+			</td>
+			<td style="">
+			<p align="center">180</p>
+			</td>
+			<td style="">
+			<p align="center">180</p>
+			</td>
+			<td style="">
+			<p align="center">180</p>
+			</td>
+		</tr>
+		<tr style="border:inherit">
+			<td style="width:75px">
+			<p align="center">высота, м</p>
+			</td>
+			<td style="width:70px">
+			<p align="center">6</p>
+			</td>
+			<td style="">
+			<p align="center">6</p>
+			</td>
+			<td style="">
+			<p align="center">6</p>
+			</td>
+			<td style="">
+			<p align="center">7</p>
+			</td>
+			<td style="">
+			<p align="center">7</p>
+			</td>
+			<td style="">
+			<p align="center">8</p>
+			</td>
+			<td style="">
+			<p align="center">8</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
 </body>
 </html>
